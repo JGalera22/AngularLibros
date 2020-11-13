@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LibroComponent } from './Components/libro/libro.component';
 
+import { ImageUploadModule } from 'angular2-image-upload'
+
 
 @NgModule({
   declarations: [
@@ -14,7 +16,8 @@ import { LibroComponent } from './Components/libro/libro.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ImageUploadModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
